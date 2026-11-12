@@ -270,6 +270,7 @@ public class Main3D {
 		texExplosao = new int[framesExplosao.length];
 		for (int i = 0; i < framesExplosao.length; i++) {
 			texExplosao[i] = TextureLoader.loadTexture(framesExplosao[(inicio + i) % framesExplosao.length]);
+			// começa em 8 pois o "flash inicial" está no frame 8
 		}
 		System.out.println("Frames da explosao: " + texExplosao.length);
 
